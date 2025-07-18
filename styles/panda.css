@@ -11,13 +11,13 @@
 }
 
 /* btn-primary */
-.panda-btn{
- border-radius: 6px;
- background: linear-gradient(180.00deg, rgb(255, 88, 155) -0.006%,rgb(255, 19, 111) 99.994%);
- padding: 16px 28px;
- border: none;
- color: white;
- font-weight: 500;
+.panda-btn {
+  border-radius: 6px;
+  background: linear-gradient(180.00deg, rgb(255, 88, 155) -0.006%, rgb(255, 19, 111) 99.994%);
+  padding: 16px 28px;
+  border: none;
+  color: white;
+  font-weight: 500;
 }
 
 .container {
@@ -106,7 +106,47 @@ nav {
   margin-bottom: 0;
 }
 
+/* Category-styles */
+.categories-card-container {
+  display: flex;
+  gap: 26px;
+  width: 100%;
+}
 
+
+.category {
+  display: flex;
+  flex: 1;
+  justify-content: space-between;
+  gap: 5px;
+  align-items: center;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.category-card h3 {
+  color: white;
+  font-weight: bold;
+  font-size: 30px;
+}
+
+.common-section-title{
+  font-weight: 500;
+  font-size: 36px;
+}
+
+.category-1 {
+  background: linear-gradient(151.85deg, rgb(255, 156, 53) 14.537%, rgb(255, 208, 25) 84.486%);
+}
+
+.category-2 {
+  /* Linear */
+  background: linear-gradient(180.00deg, rgb(255, 88, 155) -0.006%, rgb(255, 19, 111) 99.994%);
+}
+
+.category-3 {
+  background: linear-gradient(170.38deg, rgb(66, 137, 255) 15.416%, rgb(63, 7, 248) 74.29%);
+}
 
 
 
@@ -137,11 +177,14 @@ nav {
   }
 
   /* Banner */
-  .banner{
+  .banner {
     flex-direction: column-reverse;
     background-color: white;
   }
-
+  /* category */
+  .categories-card-container{
+    flex-direction: column;
+  }
 }
 
 
