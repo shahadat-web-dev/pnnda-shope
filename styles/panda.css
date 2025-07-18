@@ -1,0 +1,164 @@
+/* Google font poppins */
+.poppins-font {
+  font-family: "Poppins", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+
+* {
+  box-sizing: border-box;
+}
+
+/* btn-primary */
+.panda-btn{
+ border-radius: 6px;
+ background: linear-gradient(180.00deg, rgb(255, 88, 155) -0.006%,rgb(255, 19, 111) 99.994%);
+ padding: 16px 28px;
+ border: none;
+ color: white;
+ font-weight: 500;
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+/* header section */
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+}
+
+.Search-parent {
+  position: relative;
+  color: #BABABA;
+}
+
+.Search-parent input {
+  background-color: rgb(241, 241, 241);
+  border-radius: 66px;
+  padding: 15px 30px;
+  width: 500px;
+  border: none;
+
+}
+
+.Search-parent i {
+  position: absolute;
+  right: 10px;
+  top: 18px;
+}
+
+
+.nav-items {
+  display: flex;
+  list-style: none;
+  gap: 24px;
+}
+
+.nav-items li>a {
+  text-decoration: none;
+  color: #707070;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+
+/* Banner section */
+.banner {
+  background-color: rgb(254, 234, 233);
+  display: flex;
+  justify-content: space-between;
+  gap: 5px;
+  align-items: center;
+  padding: 28px;
+  border-radius: 10px;
+  margin-top: 30px;
+}
+
+.banner img {
+  width: 402px;
+  height: 378px;
+}
+
+.banner h2 {
+  font-size: 56px;
+  font-weight: 700;
+}
+
+.banner p {
+  font-size: 16px;
+  font-weight: 400;
+  color: #4E4E4E;
+  max-width: 556px;
+}
+
+.banner-price {
+  font-size: 41px;
+  font-weight: 500;
+  color: #FF136F;
+  display: block;
+  margin-bottom: 0;
+}
+
+
+
+
+
+
+
+
+/* Mobile device responsive */
+@media screen and (max-width: 576px) {
+  nav {
+    flex-direction: column;
+  }
+
+  .Search-parent input {
+    display: none;
+  }
+
+  .nav-items {
+    display: none;
+  }
+
+  .Search-parent i {
+    display: none;
+  }
+
+  .panda-logo img {
+    width: 300px;
+    padding-right: 20px;
+  }
+
+  /* Banner */
+  .banner{
+    flex-direction: column-reverse;
+    background-color: white;
+  }
+
+}
+
+
+
+
+/* Tablet device responsive */
+@media screen and (min-width: 576px) and (max-width: 992px) {
+  .nav-items {
+    display: none;
+  }
+
+  .Search-parent {
+    padding-right: 50px;
+  }
+
+  .Search-parent i {
+    display: none;
+  }
+
+}
