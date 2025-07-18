@@ -8,6 +8,7 @@
 
 * {
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 /* btn-primary */
@@ -135,16 +136,20 @@ nav {
   font-size: 36px;
 }
 
+/* Linear */
 .category-1 {
+  color: white;
   background: linear-gradient(151.85deg, rgb(255, 156, 53) 14.537%, rgb(255, 208, 25) 84.486%);
 }
 
 .category-2 {
-  /* Linear */
+
+  color: white;
   background: linear-gradient(180.00deg, rgb(255, 88, 155) -0.006%, rgb(255, 19, 111) 99.994%);
 }
 
 .category-3 {
+  color: white;
   background: linear-gradient(170.38deg, rgb(66, 137, 255) 15.416%, rgb(63, 7, 248) 74.29%);
 }
 
@@ -200,7 +205,29 @@ nav {
   margin-bottom: 12px;
 }
 
+/* Contact section */
+.contact-us {
+  background: rgb(255, 242, 241);
+  text-align: center;
+  padding: 50px 20px;
+  margin: 35px auto;
+  border-radius: 15px;
+}
 
+.contact-input-btn-parent {
+  display: flex;
+  justify-content: center;
+}
+
+.contact-input-btn-parent input {
+  border: none;
+  padding: 15px 152px;
+}
+
+.contact-input-btn-parent .panda-btn {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
 
 
 
@@ -243,9 +270,22 @@ nav {
   }
 
   /* Shoes and backpack */
-  .shoes-backpack-item-parent , .shoes-card-container{
-       flex-direction: column;
+  .shoes-backpack-item-parent,
+  .shoes-card-container,
+  .contact-input-btn-parent {
+    flex-direction: column;
   }
+
+
+
+  .contact-input-btn-parent .panda-btn {
+    margin-top: 20px;
+  }
+
+  .contact-us{
+    padding: 30px 30px;
+  }
+
 }
 
 
@@ -264,5 +304,6 @@ nav {
   .Search-parent i {
     display: none;
   }
+
 
 }
