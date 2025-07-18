@@ -94,7 +94,7 @@ nav {
 .banner p {
   font-size: 16px;
   font-weight: 400;
-  color: #4E4E4E;
+  color: #110808;
   max-width: 556px;
 }
 
@@ -130,7 +130,7 @@ nav {
   font-size: 30px;
 }
 
-.common-section-title{
+.common-section-title {
   font-weight: 500;
   font-size: 36px;
 }
@@ -147,6 +147,61 @@ nav {
 .category-3 {
   background: linear-gradient(170.38deg, rgb(66, 137, 255) 15.416%, rgb(63, 7, 248) 74.29%);
 }
+
+
+/* Shoes and Back section */
+.shoes-backpack-item-parent {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.shoes-backpack-item-parent p {
+  color: #FF9D00;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.shoes-backpack-parent {
+  background: rgb(244, 244, 244);
+}
+
+.shoes-section {
+  background-color: #F4F4F4;
+  padding: 50px 0;
+}
+
+.shoes-card-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+}
+
+.shoes-card {
+  background-color: white;
+  border-radius: 10px;
+  text-align: center;
+  padding: 25px;
+}
+
+.shoes-card img {
+  width: 356px;
+  height: 202px;
+}
+
+.shoes-card .panda-btn {
+  background: black;
+}
+
+.shoes-price {
+  display: block;
+  font-weight: 600;
+  font-size: 22px;
+  margin-bottom: 12px;
+}
+
+
+
 
 
 
@@ -172,7 +227,7 @@ nav {
   }
 
   .panda-logo img {
-    width: 300px;
+    /* width: 300px; */
     padding-right: 20px;
   }
 
@@ -181,9 +236,15 @@ nav {
     flex-direction: column-reverse;
     background-color: white;
   }
+
   /* category */
-  .categories-card-container{
+  .categories-card-container {
     flex-direction: column;
+  }
+
+  /* Shoes and backpack */
+  .shoes-backpack-item-parent , .shoes-card-container{
+       flex-direction: column;
   }
 }
 
