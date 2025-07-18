@@ -187,6 +187,7 @@ nav {
   border-radius: 10px;
   text-align: center;
   padding: 25px;
+  box-shadow: 1px 1px 10px 5px blueviolet;
 }
 
 .shoes-card img {
@@ -304,6 +305,11 @@ nav {
   .Search-parent i {
     display: none;
   }
-
-
+  
+  /* .shoes-card img{
+    width: 200px;
+  } */
+ .shoes-card-container {
+  flex-direction: column;
+ }
 }
